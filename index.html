@@ -1,0 +1,107 @@
+<html>
+
+  <head>
+    <title >Spotify Music Player</title>
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src='script.js'></script>
+        <script type="text/javascript" src="oauth.js"></script>
+        <script type="text/javascript" src="sha1.js"></script>
+    <script type="text/javascript" src="prettyprint.js"></script>
+  </head>
+
+  <body>
+    <div style="font-size:16px; color:white; text-aligh:left"> Zixuan's music site </div>
+   
+    <h1> Search for your favorite music! </h1>
+        <div id='queryBox'>
+          <form class="buttons">
+          </br>
+          <div class="row">
+            <div class="small-10">
+              <div class="row">
+                <div class="small-3 columns">
+                  <label for="artist" class="right">Artist:</label>
+                </div>
+                <div class="small-9 columns">
+                  <input type="text" id="artist" placeholder="Type an artist name">
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="row">
+            <div class="small-10">
+              <div class="row">
+                <div class="small-3 columns">
+                  <label for="song" class="right">Track:</label>
+                </div>
+                <div class="small-9 columns">
+                  <input type="text" id="song" placeholder="Type a song's name">
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="row">
+            <div class="small-10">
+              <div class="row">
+                <div class="small-3 columns">
+                  <label for="album" class="right">Album:</label>
+                </div>
+                <div class="small-9 columns">
+                  <input id="album" type = "text" placeholder="Type an album name"/>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+           <div class="row">
+            <div class="small-10">
+              <div class="row">
+                <div class="small-3 columns">
+                  <label for="genre" class="right">Genre:</label>
+                </div>
+                <div class="small-9 columns">
+                  <input id="genre" type = "text" placeholder="Type a Genre name"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="row">
+            <div class="small-10">
+              <div class="row">
+                <div class="small-3 columns">
+                  <label for="year" class="right">Year:</label>
+                </div>
+                <div class="small-9 columns">
+                  <input id="year" type = "text" placeholder="Type the publish year"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "row reset-search-button">
+            <div class="btn-group">
+              <button type="reset" class="btn btn-primary btn-lg">Reset</button>
+              <button type="button" class="btn btn-primary btn-lg" onclick="explore();">Search</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div align = "center" id="resultList">
+    </div>
+     
+  </body>
+</html>
